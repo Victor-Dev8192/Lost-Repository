@@ -5,20 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yarndings+20&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap');
+        :root{
+            --font-yarndings: "Yarndings 20", sans-serif;
+            --font-noto-symbols: "Noto Sans Symbols", sans-serif ;
+            --font-redacted-script: "Redacted Script", sans-serif;
+        }
         table{
-            width: 400px;
+            width: 125px;
+        }
+        h1{
+            font-family: var(--font-redacted-script);
+        }
+        tr{
+            background-color: rgb(125, 125, 125);
+        }
+        #V{
+            background-color: rgb(255, 255, 0);
         }
     </style>
 </head>
 <body>
     <h1>alebaT ariemirP ahniM</h1>
     <table>
+        <thead>
+            <tr><td>A</td><td>B</td></tr>           
+        </thead>
         <tbody>
-            <tr>Aluno 1</tr>
-            <tr>Aluno 2</tr>
+            <tr><td>C</td><td>D</td></tr>
         </tbody>
         <tfoot>
-            <tr>Aluno3</tr>
+            <tr><td>E</td><td id="V">V</td></tr>
         </tfoot>
     </table>
 </body>
